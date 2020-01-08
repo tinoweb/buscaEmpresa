@@ -34,6 +34,7 @@ findEmpresa = (data) => {
 	        dataType   : 'json',
 			success: function(retorno){
 				if (retorno.status == "ERROR") {
+				alert(JSON.stringify(retorno));
 					app.dialog.create({
 						title: "Pesquisar CNPJ",
 						text: "CNPJ inválido! Tente um correto.",
@@ -46,15 +47,17 @@ findEmpresa = (data) => {
 						    }
 						},
 					}).open();
-
+					
 				}else{
+					alert(JSON.stringify(retorno));
 					swich_tela_details(retorno);
 					
 				}
 				
 	        },
 	        error: function(error) {
-	        	console.log("tem informacoes com erro");
+	        	alert("tem informacoes com erro");
+	        	alert(JSON.stringify(error));
 				console.log(JSON.stringify(error));
 	        }
 		});	
