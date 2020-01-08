@@ -21,7 +21,29 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.buscaempresa.phonega"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.buscaempresa.phonega"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.buscaempresa.phonega"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.buscaempresa.phonega"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.buscaempresa.phonega"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.buscaempresa.phonega"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.buscaempresa.phonega"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.buscaempresa.phonega"
+    }
+  }
 }
