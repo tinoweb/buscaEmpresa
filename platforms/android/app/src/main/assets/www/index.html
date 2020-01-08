@@ -50,13 +50,14 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="core/js/framework7.bundle.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
     <script type="text/javascript" src="js/mdl_inicalizaapp.js"></script>
-    <script type="text/javascript" src="https://www.controlcondo.com.br/controlcondo/v2/js/jquery.mask.js"></script>
     
     <script type="text/javascript">
-        
-        $('#inputCNPJ').mask('00.000.000/0000-00');
+        jQuery(document).ready(function($) {
+            $('#inputCNPJ').mask('00.000.000/0000-00');
+        });
         
         function onDeviceReady() {
             app2.initialize();
