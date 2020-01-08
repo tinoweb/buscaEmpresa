@@ -26,7 +26,7 @@ findEmpresa = (data) => {
 	}else{
 		$.ajax({
 			type: 'GET',
-			url: "https://www.receitaws.com.br/v1/cnpj/"+resultado.cnpj,
+			url: "https://viacep.com.br/ws/13160108/json/",
 			crossDomain: true,
 			beforeSend : function() { app.dialog.preloader("Carregando...", 'blue'); },
 			complete   : function() { app.dialog.close(); },
@@ -57,7 +57,7 @@ findEmpresa = (data) => {
 	        },
 	        error: function(error) {
 	        	alert("tem informacoes com erro");
-	        	alert("https://www.receitaws.com.br/v1/cnpj/"+resultado.cnpj);
+	        	alert("https://viacep.com.br/ws/13160108/json/");
 	        	alert(JSON.stringify(error));
 				console.log(JSON.stringify(error));
 	        }
