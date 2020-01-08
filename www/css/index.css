@@ -34,3 +34,8 @@
     position: absolute;
     text-align: center;
 }
+
+.tituloModificado{
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
