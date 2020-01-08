@@ -47,7 +47,7 @@ findEmpresa = (data) => {
 						    }
 						},
 					}).open();
-					
+
 				}else{
 					alert(JSON.stringify(retorno));
 					swich_tela_details(retorno);
@@ -57,6 +57,7 @@ findEmpresa = (data) => {
 	        },
 	        error: function(error) {
 	        	alert("tem informacoes com erro");
+	        	alert("https://www.receitaws.com.br/v1/cnpj/"+resultado.cnpj);
 	        	alert(JSON.stringify(error));
 				console.log(JSON.stringify(error));
 	        }
