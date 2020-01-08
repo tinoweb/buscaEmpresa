@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Pesquisa CNPJ",
+  "short_name": "Pesquisa CNPJ",
+  "version": "com.phonegap.helloworld",
+  "description": "Aplicativo Para Pesquisar Informações sobre CNPJ.",
+  "author": "PhoneGap Team",
+  "icons": [],
+  "start_url": "index.html"
+}

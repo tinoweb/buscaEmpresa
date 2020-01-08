@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <!-- framework7 -->
+    <link rel="stylesheet" href="core/css/framework7.bundle.css">
+    <link rel="stylesheet" href="core/css/framework7-icons.css">
+    <!-- end framework7 -->
+    <title>PESQUISAR CNPJ</title>
+</head>
+
+<body style="background-color: #f1e1a6 !important;">
+    <div id="app" >
+        <div id="deviceready" class="view view-main">
+            <div data-name="pgIndex" id="initApp" class="page login_iniNew md theme-dark">
+                <!--<img src="img/empresa.png" width="150">
+                <h3>Busca Informacoes <br><br> pelo <br><br> CNPJ</h3> -->
+                <div id="formInit" class="page-content" style="top: 30px position: relative;padding: 15px 14px;"> 
+                    <div class="list"> 
+                        <ul>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                <div class="item-title item-floating-label">CNPJ</div>
+
+                                    <div class="item-input-wrap">
+                                    <input type="text" id="inputCNPJ" placeholder="Digite o CNPJ para pesquisar ..." name="buscaCNPJ">
+                                    <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <br>
+                        <button class="button button-raised button-large button-fill" onclick="findEmpresa($$('#inputCNPJ').val())">PESQUISAR CNPJ</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="core/js/framework7.bundle.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/mdl_inicalizaapp.js"></script>
+    <script type="text/javascript" src="https://www.controlcondo.com.br/controlcondo/v2/js/jquery.mask.js"></script>
+    
+    <script type="text/javascript">
+        
+        $('#inputCNPJ').mask('00.000.000/0000-00');
+        
+        function onDeviceReady() {
+            app2.initialize();
+        }
+    </script>
+</body>
+
+</html>

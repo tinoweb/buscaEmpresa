@@ -1,0 +1,36 @@
+.login_iniNew{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    top: 62px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.primeiroAcesso{
+    color: #4a3f3f !important;
+}
+
+#telaVerificaCodigo{
+    display:none;
+}
+
+.aceitaTermoClass{
+    display:none;   
+}
+
+.toolbar:after {
+    content: none !important;
+    position: absolute;
+}
+/*######## End add by Tino #############*/
+
+.login_ini img {
+    top: 13%;
+    left: 30%;
+    position: absolute;
+    text-align: center;
+}
