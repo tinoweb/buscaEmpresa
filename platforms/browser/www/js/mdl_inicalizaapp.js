@@ -34,7 +34,7 @@ findEmpresa = (data) => {
 	        dataType   : 'json',
 			success: function(retorno){
 				if (retorno.status == "ERROR") {
-				alert(JSON.stringify(retorno));
+				
 					app.dialog.create({
 						title: "Pesquisar CNPJ",
 						text: "CNPJ inválido! Tente um correto.",
@@ -49,16 +49,14 @@ findEmpresa = (data) => {
 					}).open();
 
 				}else{
-					alert(JSON.stringify(retorno));
+					
 					swich_tela_details(retorno);
 					
 				}
 				
 	        },
 	        error: function(error) {
-	        	alert("tem informacoes com erro");
-	        	alert("https://www.receitaws.com.br/v1/cnpj/"+resultado.cnpj);
-	        	alert(JSON.stringify(error));
+	        	
 				console.log(JSON.stringify(error));
 	        }
 		});	
@@ -76,6 +74,7 @@ function swich_tela_details(retorno){
 	app.views.main.router.navigate("/resultado/", {animate:true, transition: 'f7-dive'});
 		$$(document).on('page:init', function (e) {
 		console.log("chegamos aki ... normalmente");
+		$("#atividadesSecundarias").html("");
 		$("#nomeEmpresa").html(retorno.nome);
 		$("#situacaoEmpresa").html(retorno.situacao);
 		$("#cnpjEmpresa").html(retorno.cnpj);
@@ -87,6 +86,7 @@ function swich_tela_details(retorno){
 		$("#estadoEmpresa").html(retorno.uf);
 
 		$.each(retorno.atividades_secundarias, function(index, val) {
+
 			$("#atividadesSecundarias").append(`
 				<span class="titulo badge color-orange">Atividade:</span>  <span id="">${val.text}</span> <br> 
 			`); 
