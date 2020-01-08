@@ -26,7 +26,7 @@ findEmpresa = (data) => {
 	}else{
 		$.ajax({
 			type: 'GET',
-			url: `https://www.receitaws.com.br/v1/cnpj/${resultado.cnpj}`,
+			url: "https://www.receitaws.com.br/v1/cnpj/"+resultado.cnpj,
 			crossDomain: true,
 			beforeSend : function() { app.dialog.preloader("Carregando...", 'blue'); },
 			complete   : function() { app.dialog.close(); },
