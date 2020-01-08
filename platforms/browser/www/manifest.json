@@ -3,9 +3,9 @@
   "display": "standalone",
   "name": "Pesquisa CNPJ",
   "short_name": "Pesquisa CNPJ",
-  "version": "com.phonegap.helloworld",
+  "version": "com.buscaempresa.phonega",
   "description": "Aplicativo Para Pesquisar Informações sobre CNPJ.",
-  "author": "PhoneGap Team",
+  "author": "Tinoweb",
   "icons": [],
   "start_url": "index.html"
 }

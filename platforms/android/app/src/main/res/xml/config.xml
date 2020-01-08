@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.buscaempresa.phonega" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="Battery">
         <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
     </feature>
@@ -40,7 +40,7 @@
         Aplicativo Para Pesquisar Informações sobre CNPJ.
     </description>
     <author email="tino477@gmail.com" href="https://tinoweb.github.io/site/">
-        PhoneGap Team
+        Tinoweb
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -56,6 +56,12 @@
     <icon density="xhdpi" src="www/res/icon/android/xhdpi.png" />
     <icon density="xxhdpi" src="www/res/icon/android/xxhdpi.png" />
     <icon density="xxxhdpi" src="www/res/icon/android/xxxhdpi.png" />
+    <splash density="port-ldpi" src="www/res/screen/android/splash-port-ldpi.png" />
+    <splash density="port-mdpi" src="www/res/screen/android/splash-port-mdpi.png" />
+    <splash density="port-hdpi" src="www/res/screen/android/splash-port-hdpi.png" />
+    <splash density="port-xhdpi" src="www/res/screen/android/splash-port-xhdpi.png" />
+    <splash density="port-xxhdpi" src="www/res/screen/android/splash-port-xxhdpi.png" />
+    <splash density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi.png" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />

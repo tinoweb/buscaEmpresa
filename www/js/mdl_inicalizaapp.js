@@ -55,7 +55,7 @@ findEmpresa = (data) => {
 	        },
 	        error: function(error) {
 	        	console.log("tem informacoes com erro");
-				console.log(error);
+				console.log(JSON.stringify(error));
 	        }
 		});	
 	}

@@ -20,7 +20,7 @@ var app = new Framework7({
         {
           name: 'pgResultado',
           path: '/resultado/',
-          url: '/paginas/resultado.html',
+          url: 'paginas/resultado.html',
         }
     ],
 });
