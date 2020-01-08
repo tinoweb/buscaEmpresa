@@ -35,6 +35,10 @@
     <feature name="Vibration">
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Pesquisa CNPJ</name>
     <description>
         Aplicativo Para Pesquisar Informações sobre CNPJ.
